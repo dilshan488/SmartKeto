@@ -9,21 +9,28 @@
 /* Begin PBXBuildFile section */
 		9E1A97FF2A0692020071B494 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E1A97FE2A0692020071B494 /* AppDelegate.swift */; };
 		9E1A98012A0692020071B494 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E1A98002A0692020071B494 /* SceneDelegate.swift */; };
-		9E1A98032A0692020071B494 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E1A98022A0692020071B494 /* ViewController.swift */; };
-		9E1A98062A0692020071B494 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9E1A98042A0692020071B494 /* Main.storyboard */; };
+		9E1A98032A0692020071B494 /* FirstScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E1A98022A0692020071B494 /* FirstScreen.swift */; };
 		9E1A98082A0692040071B494 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9E1A98072A0692040071B494 /* Assets.xcassets */; };
 		9E1A980B2A0692040071B494 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9E1A98092A0692040071B494 /* LaunchScreen.storyboard */; };
+		9E9641812A0A548A0099D0C5 /* SecondScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E9641802A0A548A0099D0C5 /* SecondScreen.swift */; };
+		9E9641832A0AEF8C0099D0C5 /* HomeScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E9641822A0AEF8C0099D0C5 /* HomeScreen.swift */; };
+		9E9641852A0AF1F10099D0C5 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E9641842A0AF1F10099D0C5 /* LoginViewController.swift */; };
+		9E96418A2A0B70DF0099D0C5 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 9E9641892A0B70DF0099D0C5 /* FirebaseAuth */; };
+		9E96418E2A0B75A40099D0C5 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9E96418D2A0B75A40099D0C5 /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		9E1A97FB2A0692020071B494 /* Smartketo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Smartketo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9E1A97FE2A0692020071B494 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9E1A98002A0692020071B494 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		9E1A98022A0692020071B494 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		9E1A98052A0692020071B494 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		9E1A98022A0692020071B494 /* FirstScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstScreen.swift; sourceTree = "<group>"; };
 		9E1A98072A0692040071B494 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9E1A980A2A0692040071B494 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9E1A980C2A0692040071B494 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9E9641802A0A548A0099D0C5 /* SecondScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondScreen.swift; sourceTree = "<group>"; };
+		9E9641822A0AEF8C0099D0C5 /* HomeScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeScreen.swift; sourceTree = "<group>"; };
+		9E9641842A0AF1F10099D0C5 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		9E96418D2A0B75A40099D0C5 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +38,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9E96418A2A0B70DF0099D0C5 /* FirebaseAuth in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -40,6 +48,7 @@
 		9E1A97F22A0692020071B494 = {
 			isa = PBXGroup;
 			children = (
+				9E96418D2A0B75A40099D0C5 /* GoogleService-Info.plist */,
 				9E1A97FD2A0692020071B494 /* Smartketo */,
 				9E1A97FC2A0692020071B494 /* Products */,
 			);
@@ -58,11 +67,13 @@
 			children = (
 				9E1A97FE2A0692020071B494 /* AppDelegate.swift */,
 				9E1A98002A0692020071B494 /* SceneDelegate.swift */,
-				9E1A98022A0692020071B494 /* ViewController.swift */,
-				9E1A98042A0692020071B494 /* Main.storyboard */,
+				9E1A98022A0692020071B494 /* FirstScreen.swift */,
+				9E9641802A0A548A0099D0C5 /* SecondScreen.swift */,
+				9E9641822A0AEF8C0099D0C5 /* HomeScreen.swift */,
 				9E1A98072A0692040071B494 /* Assets.xcassets */,
 				9E1A98092A0692040071B494 /* LaunchScreen.storyboard */,
 				9E1A980C2A0692040071B494 /* Info.plist */,
+				9E9641842A0AF1F10099D0C5 /* LoginViewController.swift */,
 			);
 			path = Smartketo;
 			sourceTree = "<group>";
@@ -83,6 +94,9 @@
 			dependencies = (
 			);
 			name = Smartketo;
+			packageProductDependencies = (
+				9E9641892A0B70DF0099D0C5 /* FirebaseAuth */,
+			);
 			productName = Smartketo;
 			productReference = 9E1A97FB2A0692020071B494 /* Smartketo.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +125,9 @@
 				Base,
 			);
 			mainGroup = 9E1A97F22A0692020071B494;
+			packageReferences = (
+				9E9641882A0B70DF0099D0C5 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+			);
 			productRefGroup = 9E1A97FC2A0692020071B494 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -127,7 +144,7 @@
 			files = (
 				9E1A980B2A0692040071B494 /* LaunchScreen.storyboard in Resources */,
 				9E1A98082A0692040071B494 /* Assets.xcassets in Resources */,
-				9E1A98062A0692020071B494 /* Main.storyboard in Resources */,
+				9E96418E2A0B75A40099D0C5 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -138,7 +155,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9E1A98032A0692020071B494 /* ViewController.swift in Sources */,
+				9E9641852A0AF1F10099D0C5 /* LoginViewController.swift in Sources */,
+				9E1A98032A0692020071B494 /* FirstScreen.swift in Sources */,
+				9E9641832A0AEF8C0099D0C5 /* HomeScreen.swift in Sources */,
+				9E9641812A0A548A0099D0C5 /* SecondScreen.swift in Sources */,
 				9E1A97FF2A0692020071B494 /* AppDelegate.swift in Sources */,
 				9E1A98012A0692020071B494 /* SceneDelegate.swift in Sources */,
 			);
@@ -147,14 +167,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		9E1A98042A0692020071B494 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				9E1A98052A0692020071B494 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		9E1A98092A0692040071B494 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -292,7 +304,6 @@
 				INFOPLIST_FILE = Smartketo/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -320,7 +331,6 @@
 				INFOPLIST_FILE = Smartketo/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -358,6 +368,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		9E9641882A0B70DF0099D0C5 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		9E9641892A0B70DF0099D0C5 /* FirebaseAuth */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 9E9641882A0B70DF0099D0C5 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAuth;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 9E1A97F32A0692020071B494 /* Project object */;
 }
