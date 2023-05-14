@@ -22,6 +22,16 @@
 		9E96418E2A0B75A40099D0C5 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9E96418D2A0B75A40099D0C5 /* GoogleService-Info.plist */; };
 		9E9641912A0C27EE0099D0C5 /* FirebaseDatabase in Frameworks */ = {isa = PBXBuildFile; productRef = 9E9641902A0C27EE0099D0C5 /* FirebaseDatabase */; };
 		9E9641932A0C281B0099D0C5 /* FirebaseDatabaseSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 9E9641922A0C281B0099D0C5 /* FirebaseDatabaseSwift */; };
+		9EC13B962A0FE79F00F9FC66 /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = 9EC13B952A0FE79F00F9FC66 /* FirebaseFirestore */; };
+		9EC13B992A0FFB7E00F9FC66 /* Video.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EC13B982A0FFB7E00F9FC66 /* Video.swift */; };
+		9EC13BA02A110F6F00F9FC66 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = 9EC13B9F2A110F6F00F9FC66 /* Kingfisher */; };
+		9EC13BA22A111B8200F9FC66 /* CalculateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EC13BA12A111B8200F9FC66 /* CalculateViewController.swift */; };
+		9EC13BA52A1142C800F9FC66 /* ResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EC13BA42A1142C800F9FC66 /* ResultViewController.swift */; };
+		9EC13BA72A11442E00F9FC66 /* CalculatorBrain.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EC13BA62A11442E00F9FC66 /* CalculatorBrain.swift */; };
+		9EC13BA92A11445A00F9FC66 /* BMI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EC13BA82A11445A00F9FC66 /* BMI.swift */; };
+		9EC13BAB2A11731100F9FC66 /* HomePageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EC13BAA2A11731100F9FC66 /* HomePageViewController.swift */; };
+		9EC13BAD2A1177C400F9FC66 /* ExerciseDescription.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EC13BAC2A1177C400F9FC66 /* ExerciseDescription.swift */; };
+		9EC13BAF2A11786000F9FC66 /* ExerciseListDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EC13BAE2A11786000F9FC66 /* ExerciseListDataModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -39,6 +49,14 @@
 		9E9641822A0AEF8C0099D0C5 /* HomeScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeScreen.swift; sourceTree = "<group>"; };
 		9E9641842A0AF1F10099D0C5 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		9E96418D2A0B75A40099D0C5 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		9EC13B982A0FFB7E00F9FC66 /* Video.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Video.swift; sourceTree = "<group>"; };
+		9EC13BA12A111B8200F9FC66 /* CalculateViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculateViewController.swift; sourceTree = "<group>"; };
+		9EC13BA42A1142C800F9FC66 /* ResultViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultViewController.swift; sourceTree = "<group>"; };
+		9EC13BA62A11442E00F9FC66 /* CalculatorBrain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculatorBrain.swift; sourceTree = "<group>"; };
+		9EC13BA82A11445A00F9FC66 /* BMI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BMI.swift; sourceTree = "<group>"; };
+		9EC13BAA2A11731100F9FC66 /* HomePageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePageViewController.swift; sourceTree = "<group>"; };
+		9EC13BAC2A1177C400F9FC66 /* ExerciseDescription.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExerciseDescription.swift; sourceTree = "<group>"; };
+		9EC13BAE2A11786000F9FC66 /* ExerciseListDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExerciseListDataModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,8 +65,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				9E9641932A0C281B0099D0C5 /* FirebaseDatabaseSwift in Frameworks */,
+				9EC13B962A0FE79F00F9FC66 /* FirebaseFirestore in Frameworks */,
 				9E9641912A0C27EE0099D0C5 /* FirebaseDatabase in Frameworks */,
 				9E96418A2A0B70DF0099D0C5 /* FirebaseAuth in Frameworks */,
+				9EC13BA02A110F6F00F9FC66 /* Kingfisher in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -76,6 +96,9 @@
 		9E1A97FD2A0692020071B494 /* Smartketo */ = {
 			isa = PBXGroup;
 			children = (
+				9EC13B9D2A1100BE00F9FC66 /* Views */,
+				9EC13B9C2A11008A00F9FC66 /* Controllers */,
+				9EC13B972A0FFB5900F9FC66 /* Model */,
 				9E3395372A0D5DAF000F2318 /* Extentions-Utilities */,
 				9E1A97FE2A0692020071B494 /* AppDelegate.swift */,
 				9E1A98002A0692020071B494 /* SceneDelegate.swift */,
@@ -107,6 +130,35 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		9EC13B972A0FFB5900F9FC66 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				9EC13B982A0FFB7E00F9FC66 /* Video.swift */,
+				9EC13BA62A11442E00F9FC66 /* CalculatorBrain.swift */,
+				9EC13BA82A11445A00F9FC66 /* BMI.swift */,
+				9EC13BAC2A1177C400F9FC66 /* ExerciseDescription.swift */,
+				9EC13BAE2A11786000F9FC66 /* ExerciseListDataModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		9EC13B9C2A11008A00F9FC66 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				9EC13BA12A111B8200F9FC66 /* CalculateViewController.swift */,
+				9EC13BA42A1142C800F9FC66 /* ResultViewController.swift */,
+				9EC13BAA2A11731100F9FC66 /* HomePageViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		9EC13B9D2A1100BE00F9FC66 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -127,6 +179,8 @@
 				9E9641892A0B70DF0099D0C5 /* FirebaseAuth */,
 				9E9641902A0C27EE0099D0C5 /* FirebaseDatabase */,
 				9E9641922A0C281B0099D0C5 /* FirebaseDatabaseSwift */,
+				9EC13B952A0FE79F00F9FC66 /* FirebaseFirestore */,
+				9EC13B9F2A110F6F00F9FC66 /* Kingfisher */,
 			);
 			productName = Smartketo;
 			productReference = 9E1A97FB2A0692020071B494 /* Smartketo.app */;
@@ -158,6 +212,7 @@
 			mainGroup = 9E1A97F22A0692020071B494;
 			packageReferences = (
 				9E9641882A0B70DF0099D0C5 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+				9EC13B9E2A110F6F00F9FC66 /* XCRemoteSwiftPackageReference "Kingfisher" */,
 			);
 			productRefGroup = 9E1A97FC2A0692020071B494 /* Products */;
 			projectDirPath = "";
@@ -186,15 +241,23 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9EC13BAD2A1177C400F9FC66 /* ExerciseDescription.swift in Sources */,
 				9E33953B2A0D5FFE000F2318 /* WorkoutCell.swift in Sources */,
 				9E3395392A0D5E4B000F2318 /* UIView+Ext.swift in Sources */,
 				9E9641852A0AF1F10099D0C5 /* LoginViewController.swift in Sources */,
+				9EC13BA22A111B8200F9FC66 /* CalculateViewController.swift in Sources */,
 				9E3395362A0D5A4B000F2318 /* WorkoutListVC.swift in Sources */,
 				9E1A98032A0692020071B494 /* FirstScreen.swift in Sources */,
 				9E9641832A0AEF8C0099D0C5 /* HomeScreen.swift in Sources */,
 				9E9641812A0A548A0099D0C5 /* SecondScreen.swift in Sources */,
+				9EC13BAB2A11731100F9FC66 /* HomePageViewController.swift in Sources */,
+				9EC13BAF2A11786000F9FC66 /* ExerciseListDataModel.swift in Sources */,
 				9E1A97FF2A0692020071B494 /* AppDelegate.swift in Sources */,
 				9E1A98012A0692020071B494 /* SceneDelegate.swift in Sources */,
+				9EC13BA92A11445A00F9FC66 /* BMI.swift in Sources */,
+				9EC13BA72A11442E00F9FC66 /* CalculatorBrain.swift in Sources */,
+				9EC13B992A0FFB7E00F9FC66 /* Video.swift in Sources */,
+				9EC13BA52A1142C800F9FC66 /* ResultViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -412,6 +475,14 @@
 				kind = branch;
 			};
 		};
+		9EC13B9E2A110F6F00F9FC66 /* XCRemoteSwiftPackageReference "Kingfisher" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/onevcat/Kingfisher";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 7.0.0;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -429,6 +500,16 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 9E9641882A0B70DF0099D0C5 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
 			productName = FirebaseDatabaseSwift;
+		};
+		9EC13B952A0FE79F00F9FC66 /* FirebaseFirestore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 9E9641882A0B70DF0099D0C5 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFirestore;
+		};
+		9EC13B9F2A110F6F00F9FC66 /* Kingfisher */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 9EC13B9E2A110F6F00F9FC66 /* XCRemoteSwiftPackageReference "Kingfisher" */;
+			productName = Kingfisher;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
