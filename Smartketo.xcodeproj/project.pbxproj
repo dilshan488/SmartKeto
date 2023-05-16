@@ -32,6 +32,22 @@
 		9EC13BAB2A11731100F9FC66 /* HomePageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EC13BAA2A11731100F9FC66 /* HomePageViewController.swift */; };
 		9EC13BAD2A1177C400F9FC66 /* ExerciseDescription.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EC13BAC2A1177C400F9FC66 /* ExerciseDescription.swift */; };
 		9EC13BAF2A11786000F9FC66 /* ExerciseListDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EC13BAE2A11786000F9FC66 /* ExerciseListDataModel.swift */; };
+		9EC13BBC2A11DC0200F9FC66 /* SwiftEntryKit in Frameworks */ = {isa = PBXBuildFile; productRef = 9EC13BBB2A11DC0200F9FC66 /* SwiftEntryKit */; };
+		9EC13BBE2A11DE1500F9FC66 /* WorkoutsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EC13BBD2A11DE1500F9FC66 /* WorkoutsViewController.swift */; };
+		9EC13BC02A11DF1600F9FC66 /* CardCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EC13BBF2A11DF1600F9FC66 /* CardCell.swift */; };
+		9EC13BD62A12122F00F9FC66 /* ProgressHUD in Frameworks */ = {isa = PBXBuildFile; productRef = 9EC13BD52A12122F00F9FC66 /* ProgressHUD */; };
+		9EC13C582A1402FD00F9FC66 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EC13C572A1402FD00F9FC66 /* HomeViewController.swift */; };
+		9EC13C5A2A14031500F9FC66 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EC13C592A14031500F9FC66 /* ProfileViewController.swift */; };
+		9EC13C5C2A14038E00F9FC66 /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EC13C5B2A14038E00F9FC66 /* TabBarViewController.swift */; };
+		9EC13C5E2A1403DF00F9FC66 /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EC13C5D2A1403DF00F9FC66 /* SignInViewController.swift */; };
+		9EC13C602A1403FC00F9FC66 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EC13C5F2A1403FC00F9FC66 /* SignUpViewController.swift */; };
+		9EC13C622A14042F00F9FC66 /* PostViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EC13C612A14042F00F9FC66 /* PostViewController.swift */; };
+		9EC13C642A14045400F9FC66 /* ViewPostViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EC13C632A14045400F9FC66 /* ViewPostViewController.swift */; };
+		9EC13C662A14048600F9FC66 /* CreateNewPostViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EC13C652A14048600F9FC66 /* CreateNewPostViewController.swift */; };
+		9EC13C682A1405E000F9FC66 /* DatabaseManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EC13C672A1405E000F9FC66 /* DatabaseManager.swift */; };
+		9EC13C6A2A14060900F9FC66 /* AuthManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EC13C692A14060900F9FC66 /* AuthManager.swift */; };
+		9EC13C6C2A14063000F9FC66 /* StorageManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EC13C6B2A14063000F9FC66 /* StorageManager.swift */; };
+		9EC13C712A1417C500F9FC66 /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = 9EC13C702A1417C500F9FC66 /* FirebaseStorage */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -57,6 +73,19 @@
 		9EC13BAA2A11731100F9FC66 /* HomePageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePageViewController.swift; sourceTree = "<group>"; };
 		9EC13BAC2A1177C400F9FC66 /* ExerciseDescription.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExerciseDescription.swift; sourceTree = "<group>"; };
 		9EC13BAE2A11786000F9FC66 /* ExerciseListDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExerciseListDataModel.swift; sourceTree = "<group>"; };
+		9EC13BBD2A11DE1500F9FC66 /* WorkoutsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkoutsViewController.swift; sourceTree = "<group>"; };
+		9EC13BBF2A11DF1600F9FC66 /* CardCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardCell.swift; sourceTree = "<group>"; };
+		9EC13C572A1402FD00F9FC66 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		9EC13C592A14031500F9FC66 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		9EC13C5B2A14038E00F9FC66 /* TabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarViewController.swift; sourceTree = "<group>"; };
+		9EC13C5D2A1403DF00F9FC66 /* SignInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
+		9EC13C5F2A1403FC00F9FC66 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
+		9EC13C612A14042F00F9FC66 /* PostViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostViewController.swift; sourceTree = "<group>"; };
+		9EC13C632A14045400F9FC66 /* ViewPostViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewPostViewController.swift; sourceTree = "<group>"; };
+		9EC13C652A14048600F9FC66 /* CreateNewPostViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateNewPostViewController.swift; sourceTree = "<group>"; };
+		9EC13C672A1405E000F9FC66 /* DatabaseManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatabaseManager.swift; sourceTree = "<group>"; };
+		9EC13C692A14060900F9FC66 /* AuthManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthManager.swift; sourceTree = "<group>"; };
+		9EC13C6B2A14063000F9FC66 /* StorageManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StorageManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,8 +94,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				9E9641932A0C281B0099D0C5 /* FirebaseDatabaseSwift in Frameworks */,
+				9EC13BD62A12122F00F9FC66 /* ProgressHUD in Frameworks */,
 				9EC13B962A0FE79F00F9FC66 /* FirebaseFirestore in Frameworks */,
+				9EC13BBC2A11DC0200F9FC66 /* SwiftEntryKit in Frameworks */,
 				9E9641912A0C27EE0099D0C5 /* FirebaseDatabase in Frameworks */,
+				9EC13C712A1417C500F9FC66 /* FirebaseStorage in Frameworks */,
 				9E96418A2A0B70DF0099D0C5 /* FirebaseAuth in Frameworks */,
 				9EC13BA02A110F6F00F9FC66 /* Kingfisher in Frameworks */,
 			);
@@ -96,6 +128,9 @@
 		9E1A97FD2A0692020071B494 /* Smartketo */ = {
 			isa = PBXGroup;
 			children = (
+				9EC13C562A14022E00F9FC66 /* Managers */,
+				9EC13BC72A11F4D800F9FC66 /* Cells */,
+				9EC13BD12A12116600F9FC66 /* ViewModel */,
 				9EC13B9D2A1100BE00F9FC66 /* Views */,
 				9EC13B9C2A11008A00F9FC66 /* Controllers */,
 				9EC13B972A0FFB5900F9FC66 /* Model */,
@@ -145,9 +180,15 @@
 		9EC13B9C2A11008A00F9FC66 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				9EC13C6D2A140CB600F9FC66 /* Core Tabs */,
 				9EC13BA12A111B8200F9FC66 /* CalculateViewController.swift */,
 				9EC13BA42A1142C800F9FC66 /* ResultViewController.swift */,
 				9EC13BAA2A11731100F9FC66 /* HomePageViewController.swift */,
+				9EC13BBD2A11DE1500F9FC66 /* WorkoutsViewController.swift */,
+				9EC13BBF2A11DF1600F9FC66 /* CardCell.swift */,
+				9EC13C6E2A140D1900F9FC66 /* Auth */,
+				9EC13C6F2A140D3800F9FC66 /* Posts */,
+				9EC13C652A14048600F9FC66 /* CreateNewPostViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -157,6 +198,58 @@
 			children = (
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		9EC13BC72A11F4D800F9FC66 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		9EC13BD12A12116600F9FC66 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		9EC13C562A14022E00F9FC66 /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				9EC13C672A1405E000F9FC66 /* DatabaseManager.swift */,
+				9EC13C692A14060900F9FC66 /* AuthManager.swift */,
+				9EC13C6B2A14063000F9FC66 /* StorageManager.swift */,
+			);
+			path = Managers;
+			sourceTree = "<group>";
+		};
+		9EC13C6D2A140CB600F9FC66 /* Core Tabs */ = {
+			isa = PBXGroup;
+			children = (
+				9EC13C572A1402FD00F9FC66 /* HomeViewController.swift */,
+				9EC13C592A14031500F9FC66 /* ProfileViewController.swift */,
+				9EC13C5B2A14038E00F9FC66 /* TabBarViewController.swift */,
+			);
+			path = "Core Tabs";
+			sourceTree = "<group>";
+		};
+		9EC13C6E2A140D1900F9FC66 /* Auth */ = {
+			isa = PBXGroup;
+			children = (
+				9EC13C5F2A1403FC00F9FC66 /* SignUpViewController.swift */,
+				9EC13C5D2A1403DF00F9FC66 /* SignInViewController.swift */,
+			);
+			path = Auth;
+			sourceTree = "<group>";
+		};
+		9EC13C6F2A140D3800F9FC66 /* Posts */ = {
+			isa = PBXGroup;
+			children = (
+				9EC13C632A14045400F9FC66 /* ViewPostViewController.swift */,
+				9EC13C612A14042F00F9FC66 /* PostViewController.swift */,
+			);
+			path = Posts;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -181,6 +274,9 @@
 				9E9641922A0C281B0099D0C5 /* FirebaseDatabaseSwift */,
 				9EC13B952A0FE79F00F9FC66 /* FirebaseFirestore */,
 				9EC13B9F2A110F6F00F9FC66 /* Kingfisher */,
+				9EC13BBB2A11DC0200F9FC66 /* SwiftEntryKit */,
+				9EC13BD52A12122F00F9FC66 /* ProgressHUD */,
+				9EC13C702A1417C500F9FC66 /* FirebaseStorage */,
 			);
 			productName = Smartketo;
 			productReference = 9E1A97FB2A0692020071B494 /* Smartketo.app */;
@@ -213,6 +309,8 @@
 			packageReferences = (
 				9E9641882A0B70DF0099D0C5 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
 				9EC13B9E2A110F6F00F9FC66 /* XCRemoteSwiftPackageReference "Kingfisher" */,
+				9EC13BBA2A11DC0200F9FC66 /* XCRemoteSwiftPackageReference "SwiftEntryKit" */,
+				9EC13BD42A12122F00F9FC66 /* XCRemoteSwiftPackageReference "ProgressHUD" */,
 			);
 			productRefGroup = 9E1A97FC2A0692020071B494 /* Products */;
 			projectDirPath = "";
@@ -242,21 +340,34 @@
 			buildActionMask = 2147483647;
 			files = (
 				9EC13BAD2A1177C400F9FC66 /* ExerciseDescription.swift in Sources */,
+				9EC13BBE2A11DE1500F9FC66 /* WorkoutsViewController.swift in Sources */,
+				9EC13C6A2A14060900F9FC66 /* AuthManager.swift in Sources */,
+				9EC13C5C2A14038E00F9FC66 /* TabBarViewController.swift in Sources */,
 				9E33953B2A0D5FFE000F2318 /* WorkoutCell.swift in Sources */,
+				9EC13C622A14042F00F9FC66 /* PostViewController.swift in Sources */,
+				9EC13C662A14048600F9FC66 /* CreateNewPostViewController.swift in Sources */,
 				9E3395392A0D5E4B000F2318 /* UIView+Ext.swift in Sources */,
 				9E9641852A0AF1F10099D0C5 /* LoginViewController.swift in Sources */,
 				9EC13BA22A111B8200F9FC66 /* CalculateViewController.swift in Sources */,
 				9E3395362A0D5A4B000F2318 /* WorkoutListVC.swift in Sources */,
 				9E1A98032A0692020071B494 /* FirstScreen.swift in Sources */,
+				9EC13BC02A11DF1600F9FC66 /* CardCell.swift in Sources */,
 				9E9641832A0AEF8C0099D0C5 /* HomeScreen.swift in Sources */,
 				9E9641812A0A548A0099D0C5 /* SecondScreen.swift in Sources */,
 				9EC13BAB2A11731100F9FC66 /* HomePageViewController.swift in Sources */,
 				9EC13BAF2A11786000F9FC66 /* ExerciseListDataModel.swift in Sources */,
 				9E1A97FF2A0692020071B494 /* AppDelegate.swift in Sources */,
 				9E1A98012A0692020071B494 /* SceneDelegate.swift in Sources */,
+				9EC13C582A1402FD00F9FC66 /* HomeViewController.swift in Sources */,
 				9EC13BA92A11445A00F9FC66 /* BMI.swift in Sources */,
+				9EC13C682A1405E000F9FC66 /* DatabaseManager.swift in Sources */,
+				9EC13C642A14045400F9FC66 /* ViewPostViewController.swift in Sources */,
+				9EC13C602A1403FC00F9FC66 /* SignUpViewController.swift in Sources */,
 				9EC13BA72A11442E00F9FC66 /* CalculatorBrain.swift in Sources */,
+				9EC13C5A2A14031500F9FC66 /* ProfileViewController.swift in Sources */,
 				9EC13B992A0FFB7E00F9FC66 /* Video.swift in Sources */,
+				9EC13C6C2A14063000F9FC66 /* StorageManager.swift in Sources */,
+				9EC13C5E2A1403DF00F9FC66 /* SignInViewController.swift in Sources */,
 				9EC13BA52A1142C800F9FC66 /* ResultViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -483,6 +594,22 @@
 				minimumVersion = 7.0.0;
 			};
 		};
+		9EC13BBA2A11DC0200F9FC66 /* XCRemoteSwiftPackageReference "SwiftEntryKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/huri000/SwiftEntryKit";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.0.0;
+			};
+		};
+		9EC13BD42A12122F00F9FC66 /* XCRemoteSwiftPackageReference "ProgressHUD" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/relatedcode/ProgressHUD";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 13.0.0;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -510,6 +637,21 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 9EC13B9E2A110F6F00F9FC66 /* XCRemoteSwiftPackageReference "Kingfisher" */;
 			productName = Kingfisher;
+		};
+		9EC13BBB2A11DC0200F9FC66 /* SwiftEntryKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 9EC13BBA2A11DC0200F9FC66 /* XCRemoteSwiftPackageReference "SwiftEntryKit" */;
+			productName = SwiftEntryKit;
+		};
+		9EC13BD52A12122F00F9FC66 /* ProgressHUD */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 9EC13BD42A12122F00F9FC66 /* XCRemoteSwiftPackageReference "ProgressHUD" */;
+			productName = ProgressHUD;
+		};
+		9EC13C702A1417C500F9FC66 /* FirebaseStorage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 9E9641882A0B70DF0099D0C5 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseStorage;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

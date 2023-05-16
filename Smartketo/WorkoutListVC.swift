@@ -10,18 +10,18 @@ import Firebase
 import FirebaseDatabase
 import FirebaseFirestore
 class WorkoutListVC: UIViewController {
-    
+
     var ref: DatabaseReference!
 var tableView = UITableView()
 // var users: [User] = []
-    
+
     var videos:[Video] = []
-    
+
     struct Cells {
-        
+
         static let videoCell = "WorkoutCell"
     }
-    
+
     override func viewDidLoad() {
         super.viewDidLoad()
         videos = fetchData()
@@ -29,9 +29,9 @@ var tableView = UITableView()
         configureTableView()
 
     }
-    
+
     func configureTableView(){
-        
+
         view.addSubview(tableView)
         setTableViewDelegate()
         tableView.rowHeight = 100
@@ -39,12 +39,12 @@ var tableView = UITableView()
         tableView.pin(to: view)
     }
     func setTableViewDelegate(){
-        
+
         tableView.delegate = self
         tableView.dataSource = self
-        
+
     }
-    
+
 //    func observeData()
 //    {
 //        self.ref.observe(<#T##eventType: DataEventType##DataEventType#>, with: <#T##(DataSnapshot) -> Void#>)
@@ -60,21 +60,21 @@ extension WorkoutListVC:UITableViewDelegate,UITableViewDataSource{
     //        let city: String
     //        let postcode: Int
     //    }
-    
-    
+
+
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         //      users.count
-        
+
         return videos.count
     }
-    
+
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: Cells.videoCell) as! WorkoutCell
         let video = videos[indexPath.row]
         cell.set(video: video)
-        
-        
-        
+
+
+
         // else {
         //                  fatalError("Unable to dequeue UserCell")
         //              }
@@ -90,20 +90,20 @@ extension WorkoutListVC:UITableViewDelegate,UITableViewDataSource{
         //    }
         //
         return cell
-        
-        
+
+
     }
-    
+
 }
 
 extension WorkoutListVC{
-    
+
     func fetchData() -> [Video]
     {
-        
-        
+
+
        //        let db = Firestore.firestore()
-               
+
                //users = []  //  Empty the array
             //   db.collection("User").getDocuments { (snapshot, error) in
 //                   if let error = error {
@@ -126,10 +126,10 @@ extension WorkoutListVC{
 //                   }
 //               }
 //
-        
+
         return []
-        
+
         
     }
-    
+
 }

@@ -129,11 +129,6 @@ class CalculateViewController: UIViewController {
         //bmiValue=String(format: "%.2f", bmi)
         calculatorBrain.calculateBMI(height:height,weight:weight)
         
-        //self.performSegue(withIdentifier: "goToResult", sender: self)
-        
-        //        let secondVC=SecondViewController()
-        //        secondVC.bmiValue = String(format : "%.1f",bmi)
-        //        self.present(secondVC, animated: true, completion: nil)
         let nextScreen = ResultViewController()
         nextScreen.title = "ResultView"
         nextScreen.bmiValue=calculatorBrain.getBMIValue()

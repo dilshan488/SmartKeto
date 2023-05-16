@@ -10,7 +10,7 @@ import UIKit
 class FirstScreen: UIViewController {
 
     let loginButton = UIButton()
-    
+
     let signUpbutton = UIButton()
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -43,51 +43,51 @@ class FirstScreen: UIViewController {
 
 
     }
-    
-    
-    
-    
+
+
+
+
     @objc func gotohomefromlogin(){
-  
+
         let nextScreen = LoginViewController()
         navigationController?.pushViewController(nextScreen, animated: true)
    }
 
-    
 
-    
+
+
     func setupButtonsignUp(){
-        
+
         view.addSubview(signUpbutton)
         signUpbutton.configuration = .filled()
         signUpbutton.configuration?.baseBackgroundColor = .systemRed
         signUpbutton.configuration?.title = "Click to Sign UP"
-       
-        
+
+
         signUpbutton.addTarget(self, action: #selector(gotoNextScreen), for: .touchUpInside)
         signUpbutton.translatesAutoresizingMaskIntoConstraints = false
-       
+
         NSLayoutConstraint.activate([
-        
-        
-        
+
+
+
                 signUpbutton.centerXAnchor.constraint(equalTo:view.centerXAnchor),
                 signUpbutton.bottomAnchor.constraint(equalTo: view.safeAreaLayoutGuide.bottomAnchor,constant:-50),
-            
+
                 signUpbutton.widthAnchor.constraint(equalToConstant: 200),
             signUpbutton.heightAnchor.constraint(equalToConstant: 50)
-            
+
         ])
-       
-  
+
+
     }
     @objc func gotoNextScreen(){
-        
+
         let nextScreen = SecondScreen()
         nextScreen.title = " Signup Screen"
         navigationController?.pushViewController(nextScreen, animated: true)
     }
-    
-    
+
+
 }
 
