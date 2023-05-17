@@ -4,7 +4,7 @@
 //
 //  Created by Pubudu Dilshan on 2023-05-06.
 //
-
+import Firebase
 import UIKit
 import FirebaseCore
 @main

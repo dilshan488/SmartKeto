@@ -16,18 +16,39 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
       
         guard let windowScene = (scene as? UIWindowScene) else { return }
         
-//        let navigationController = UINavigationController(rootViewController:HomeViewController())
-//        window = UIWindow(frame: windowScene.coordinateSpace.bounds)
-//        window?.windowScene = windowScene
-//        window?.rootViewController = navigationController
-//        window?.makeKeyAndVisible()
-        let window = UIWindow(windowScene:windowScene)
-        let vc = TabBarViewController()
-        window.rootViewController = vc
-        window.makeKeyAndVisible()
-        self.window = window
+        let navigationController = UINavigationController(rootViewController:SignInViewController())
+        window = UIWindow(frame: windowScene.coordinateSpace.bounds)
+        window?.windowScene = windowScene
+        window?.rootViewController = navigationController
+        window?.makeKeyAndVisible()
+        
+        
+//        let window = UIWindow(windowScene:windowScene)
+//        let vc = SignInViewController()
+//        window.rootViewController = vc
+//        window.makeKeyAndVisible()
+//      self.window = window
+        
+        
+        
         //window?.windowScene = windowScene
         
+//        let window = UIWindow(windowScene:windowScene)
+//        let vc: UIViewController
+//        if AuthManager.shared.isSignedIn{
+//            vc = TabBarViewController()
+//
+//        }else {
+//            let signInVc = SignInViewController()
+//            signInVc.navigationItem.largeTitleDisplayMode = .always
+//            let navVc = UINavigationController(rootViewController: signInVc)
+//            navVc.navigationBar.prefersLargeTitles = true
+//            vc = navVc
+//        }
+//        window.rootViewController = vc
+//        window.makeKeyAndVisible()
+//        self.window = window
+//
     }
 
     func sceneDidDisconnect(_ scene: UIScene) {

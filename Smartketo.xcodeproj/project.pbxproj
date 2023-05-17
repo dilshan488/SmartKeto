@@ -48,6 +48,10 @@
 		9EC13C6A2A14060900F9FC66 /* AuthManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EC13C692A14060900F9FC66 /* AuthManager.swift */; };
 		9EC13C6C2A14063000F9FC66 /* StorageManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EC13C6B2A14063000F9FC66 /* StorageManager.swift */; };
 		9EC13C712A1417C500F9FC66 /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = 9EC13C702A1417C500F9FC66 /* FirebaseStorage */; };
+		9EC13C732A14957400F9FC66 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EC13C722A14957400F9FC66 /* User.swift */; };
+		9EC13C752A1495A900F9FC66 /* BlogPost.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EC13C742A1495A900F9FC66 /* BlogPost.swift */; };
+		9EC13C782A14C90800F9FC66 /* Extentions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EC13C772A14C90800F9FC66 /* Extentions.swift */; };
+		9EC13C7A2A14DC6C00F9FC66 /* SignInHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EC13C792A14DC6C00F9FC66 /* SignInHeaderView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -86,6 +90,10 @@
 		9EC13C672A1405E000F9FC66 /* DatabaseManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatabaseManager.swift; sourceTree = "<group>"; };
 		9EC13C692A14060900F9FC66 /* AuthManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthManager.swift; sourceTree = "<group>"; };
 		9EC13C6B2A14063000F9FC66 /* StorageManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StorageManager.swift; sourceTree = "<group>"; };
+		9EC13C722A14957400F9FC66 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		9EC13C742A1495A900F9FC66 /* BlogPost.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlogPost.swift; sourceTree = "<group>"; };
+		9EC13C772A14C90800F9FC66 /* Extentions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extentions.swift; sourceTree = "<group>"; };
+		9EC13C792A14DC6C00F9FC66 /* SignInHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInHeaderView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -128,6 +136,7 @@
 		9E1A97FD2A0692020071B494 /* Smartketo */ = {
 			isa = PBXGroup;
 			children = (
+				9EC13C762A14C8E600F9FC66 /* Other */,
 				9EC13C562A14022E00F9FC66 /* Managers */,
 				9EC13BC72A11F4D800F9FC66 /* Cells */,
 				9EC13BD12A12116600F9FC66 /* ViewModel */,
@@ -173,6 +182,8 @@
 				9EC13BA82A11445A00F9FC66 /* BMI.swift */,
 				9EC13BAC2A1177C400F9FC66 /* ExerciseDescription.swift */,
 				9EC13BAE2A11786000F9FC66 /* ExerciseListDataModel.swift */,
+				9EC13C722A14957400F9FC66 /* User.swift */,
+				9EC13C742A1495A900F9FC66 /* BlogPost.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -188,7 +199,6 @@
 				9EC13BBF2A11DF1600F9FC66 /* CardCell.swift */,
 				9EC13C6E2A140D1900F9FC66 /* Auth */,
 				9EC13C6F2A140D3800F9FC66 /* Posts */,
-				9EC13C652A14048600F9FC66 /* CreateNewPostViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -196,6 +206,7 @@
 		9EC13B9D2A1100BE00F9FC66 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				9EC13C792A14DC6C00F9FC66 /* SignInHeaderView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -246,10 +257,19 @@
 		9EC13C6F2A140D3800F9FC66 /* Posts */ = {
 			isa = PBXGroup;
 			children = (
+				9EC13C652A14048600F9FC66 /* CreateNewPostViewController.swift */,
 				9EC13C632A14045400F9FC66 /* ViewPostViewController.swift */,
 				9EC13C612A14042F00F9FC66 /* PostViewController.swift */,
 			);
 			path = Posts;
+			sourceTree = "<group>";
+		};
+		9EC13C762A14C8E600F9FC66 /* Other */ = {
+			isa = PBXGroup;
+			children = (
+				9EC13C772A14C90800F9FC66 /* Extentions.swift */,
+			);
+			path = Other;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -343,6 +363,7 @@
 				9EC13BBE2A11DE1500F9FC66 /* WorkoutsViewController.swift in Sources */,
 				9EC13C6A2A14060900F9FC66 /* AuthManager.swift in Sources */,
 				9EC13C5C2A14038E00F9FC66 /* TabBarViewController.swift in Sources */,
+				9EC13C732A14957400F9FC66 /* User.swift in Sources */,
 				9E33953B2A0D5FFE000F2318 /* WorkoutCell.swift in Sources */,
 				9EC13C622A14042F00F9FC66 /* PostViewController.swift in Sources */,
 				9EC13C662A14048600F9FC66 /* CreateNewPostViewController.swift in Sources */,
@@ -352,13 +373,16 @@
 				9E3395362A0D5A4B000F2318 /* WorkoutListVC.swift in Sources */,
 				9E1A98032A0692020071B494 /* FirstScreen.swift in Sources */,
 				9EC13BC02A11DF1600F9FC66 /* CardCell.swift in Sources */,
+				9EC13C782A14C90800F9FC66 /* Extentions.swift in Sources */,
 				9E9641832A0AEF8C0099D0C5 /* HomeScreen.swift in Sources */,
 				9E9641812A0A548A0099D0C5 /* SecondScreen.swift in Sources */,
 				9EC13BAB2A11731100F9FC66 /* HomePageViewController.swift in Sources */,
 				9EC13BAF2A11786000F9FC66 /* ExerciseListDataModel.swift in Sources */,
 				9E1A97FF2A0692020071B494 /* AppDelegate.swift in Sources */,
+				9EC13C752A1495A900F9FC66 /* BlogPost.swift in Sources */,
 				9E1A98012A0692020071B494 /* SceneDelegate.swift in Sources */,
 				9EC13C582A1402FD00F9FC66 /* HomeViewController.swift in Sources */,
+				9EC13C7A2A14DC6C00F9FC66 /* SignInHeaderView.swift in Sources */,
 				9EC13BA92A11445A00F9FC66 /* BMI.swift in Sources */,
 				9EC13C682A1405E000F9FC66 /* DatabaseManager.swift in Sources */,
 				9EC13C642A14045400F9FC66 /* ViewPostViewController.swift in Sources */,
