@@ -17,12 +17,32 @@ final class DatabaseManager{
     
     public func insert(
         blogpost: BlogPost,
-        user: User,
+        email: String,
         completion: @escaping (Bool) -> Void
     ){
+        let userEmail = email
+            .replacingOccurrences(of: ".", with: "_")
+            .replacingOccurrences(of: "@", with: "_")
         
+        let data:[String:Any] = [
+            "id": blogpost.identifier,
+            "title": blogpost.title,
+            "body": blogpost.text,
+            "created":blogpost.timestamp,
+            "headerImageUrl": blogpost.headerImageUrl?.absoluteString ?? ""      ]
+        database
+            .collection("users")
+            .document(userEmail)
+            .collection("posts")
+            .document(blogpost.identifier)
+            .setData(data){error in
+                completion(error == nil)
+                
+                
+            }
         
     }
+    
     
     
     public func getAllPosts(
@@ -35,14 +55,54 @@ final class DatabaseManager{
     
     
     public func getPosts(
-        for user: User,
+        for email: String,
         completion: @escaping ([BlogPost]) -> Void
     ){
-        
+        let userEmail = email
+            .replacingOccurrences(of: ".", with: "_")
+            .replacingOccurrences(of: "@", with: "_")
+        database
+            .collection("users")
+            .document(userEmail)
+            .collection("posts")
+            .getDocuments{snapshot, error in
+                
+                guard let documents = snapshot?.documents.compactMap({$0.data()}),
+                        error == nil else {
+                    return
+                    }
+                
+                let posts: [BlogPost] = documents.compactMap({ dictionary in
+                    guard let id = dictionary["id"] as? String,
+                          let title = dictionary["title"] as? String,
+                          let body = dictionary["body"] as? String,
+                          let created = dictionary["created"] as? TimeInterval,
+                          let ImageUrlString = dictionary["headerImageUrl"] as? String else {
+                        
+                        print("invalid post fetch convertion")
+                        return nil
+                    }
+//                    [
+//                        "id": blogpost.identifier,
+//                        "title": blogpost.title,
+//                        "body": blogpost.text,
+//                        "created":blogpost.timestamp,
+//                        "headerImageUrl": blogpost.headerImageUrl?.absoluteString ?? ""      ]
+                    
+                    let post = BlogPost(identifier: id,
+                                        title: title,
+                                        timestamp: created,
+                                        headerImageUrl: URL(string: ImageUrlString),
+                                        text: body)
+                    
+                    return post
+                })
+                completion(posts)
+            }
         
     }
     
-    
+    // inserting user
     public func inser(
         user: User,
         completion: @escaping (Bool) -> Void
@@ -50,6 +110,7 @@ final class DatabaseManager{
         let documentId = user.email
             .replacingOccurrences(of: ".", with: "_")
             .replacingOccurrences(of: "@", with: "_")
+        
         
         let data = [
             

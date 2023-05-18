@@ -30,6 +30,7 @@ class CreateNewPostViewController: UITabBarController {
         let imageView = UIImageView()
         imageView.contentMode = .scaleAspectFill
         imageView.isUserInteractionEnabled = true
+        imageView.clipsToBounds = true
         imageView.image = UIImage(systemName: "photo")
         imageView.backgroundColor = .tertiarySystemBackground
         return imageView
@@ -105,8 +106,15 @@ class CreateNewPostViewController: UITabBarController {
                 !title.trimmingCharacters(in: .whitespaces).isEmpty,
         !body.trimmingCharacters(in: .whitespaces).isEmpty
         else{
+            let alert = UIAlertController(title:"Enter post details" ,
+                                          message: "please enter a title",
+                                          preferredStyle: .alert)
+            alert.addAction(UIAlertAction(title: "Dismiss", style: .cancel, handler: nil))
+            present(alert, animated: true)
             return
         }
+        
+        print("Starting post")
         let newpostid = UUID().uuidString
         //upload header
         StorageManager.shared.uploadBlogHeaderImage(email: email, image: headerImage, postid: newpostid){
@@ -116,22 +124,36 @@ class CreateNewPostViewController: UITabBarController {
                 return
             }
             
-            StorageManager.shared.downloadUrlForPostHeader(email: email, postid: newpostid){ url in
+            StorageManager.shared.downloadUrlForPostHeader(email: email,
+                                                           postid: newpostid){ url in
                 guard let headerUrl = url else{
-                    
+                    print("fail to upload url")
                     return
                 }
-                let post = BlogPost(identifier: newpostid, title: title, timestamp: Date().timeIntervalSince1970,
+                
+                
+                //insert of post in to db
+                
+                let post = BlogPost(
+                    identifier: newpostid,
+                                    title: title,
+                                    timestamp: Date().timeIntervalSince1970,
                                     headerImageUrl: headerUrl,
                                     text: body)
+                DatabaseManager.shared.insert(blogpost: post, email: email){[weak self]posted in
+                    guard posted else {
+                        
+                        print("fail to post")
+                        return
+                    }
+                    DispatchQueue.main.async {
+                        self?.didTapCancel()
+                    }
+                }
             }
                 
             }
         }
-        
-        //insert of post in to db
-        
-        
         
 }
 

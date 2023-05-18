@@ -52,6 +52,8 @@
 		9EC13C752A1495A900F9FC66 /* BlogPost.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EC13C742A1495A900F9FC66 /* BlogPost.swift */; };
 		9EC13C782A14C90800F9FC66 /* Extentions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EC13C772A14C90800F9FC66 /* Extentions.swift */; };
 		9EC13C7A2A14DC6C00F9FC66 /* SignInHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EC13C792A14DC6C00F9FC66 /* SignInHeaderView.swift */; };
+		9EC13C7D2A16185100F9FC66 /* PostPreviewUITableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EC13C7C2A16185100F9FC66 /* PostPreviewUITableViewCell.swift */; };
+		9EC13C7F2A1618AD00F9FC66 /* PostHeaderTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EC13C7E2A1618AD00F9FC66 /* PostHeaderTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -94,6 +96,8 @@
 		9EC13C742A1495A900F9FC66 /* BlogPost.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlogPost.swift; sourceTree = "<group>"; };
 		9EC13C772A14C90800F9FC66 /* Extentions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extentions.swift; sourceTree = "<group>"; };
 		9EC13C792A14DC6C00F9FC66 /* SignInHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInHeaderView.swift; sourceTree = "<group>"; };
+		9EC13C7C2A16185100F9FC66 /* PostPreviewUITableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostPreviewUITableViewCell.swift; sourceTree = "<group>"; };
+		9EC13C7E2A1618AD00F9FC66 /* PostHeaderTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostHeaderTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -138,7 +142,6 @@
 			children = (
 				9EC13C762A14C8E600F9FC66 /* Other */,
 				9EC13C562A14022E00F9FC66 /* Managers */,
-				9EC13BC72A11F4D800F9FC66 /* Cells */,
 				9EC13BD12A12116600F9FC66 /* ViewModel */,
 				9EC13B9D2A1100BE00F9FC66 /* Views */,
 				9EC13B9C2A11008A00F9FC66 /* Controllers */,
@@ -206,6 +209,7 @@
 		9EC13B9D2A1100BE00F9FC66 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				9EC13BC72A11F4D800F9FC66 /* Cells */,
 				9EC13C792A14DC6C00F9FC66 /* SignInHeaderView.swift */,
 			);
 			path = Views;
@@ -214,6 +218,8 @@
 		9EC13BC72A11F4D800F9FC66 /* Cells */ = {
 			isa = PBXGroup;
 			children = (
+				9EC13C7C2A16185100F9FC66 /* PostPreviewUITableViewCell.swift */,
+				9EC13C7E2A1618AD00F9FC66 /* PostHeaderTableViewCell.swift */,
 			);
 			path = Cells;
 			sourceTree = "<group>";
@@ -364,6 +370,7 @@
 				9EC13C6A2A14060900F9FC66 /* AuthManager.swift in Sources */,
 				9EC13C5C2A14038E00F9FC66 /* TabBarViewController.swift in Sources */,
 				9EC13C732A14957400F9FC66 /* User.swift in Sources */,
+				9EC13C7D2A16185100F9FC66 /* PostPreviewUITableViewCell.swift in Sources */,
 				9E33953B2A0D5FFE000F2318 /* WorkoutCell.swift in Sources */,
 				9EC13C622A14042F00F9FC66 /* PostViewController.swift in Sources */,
 				9EC13C662A14048600F9FC66 /* CreateNewPostViewController.swift in Sources */,
@@ -376,6 +383,7 @@
 				9EC13C782A14C90800F9FC66 /* Extentions.swift in Sources */,
 				9E9641832A0AEF8C0099D0C5 /* HomeScreen.swift in Sources */,
 				9E9641812A0A548A0099D0C5 /* SecondScreen.swift in Sources */,
+				9EC13C7F2A1618AD00F9FC66 /* PostHeaderTableViewCell.swift in Sources */,
 				9EC13BAB2A11731100F9FC66 /* HomePageViewController.swift in Sources */,
 				9EC13BAF2A11786000F9FC66 /* ExerciseListDataModel.swift in Sources */,
 				9E1A97FF2A0692020071B494 /* AppDelegate.swift in Sources */,

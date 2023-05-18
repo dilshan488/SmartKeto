@@ -33,7 +33,7 @@ class HomeViewController: UIViewController {
     
     override func viewDidLayoutSubviews() {
         super.viewDidLayoutSubviews()
-        composeButton.frame = CGRect(x: view.frame.width - 80 - 16 , y: view.frame.height - 80 - 16 - view.safeAreaInsets.bottom, width: 80, height: 80)
+        composeButton.frame = CGRect(x: view.frame.width - 80, y: view.frame.height - 88  - view.safeAreaInsets.bottom, width: 80, height: 80)
     }
 
     @objc private func didTapcreate(){

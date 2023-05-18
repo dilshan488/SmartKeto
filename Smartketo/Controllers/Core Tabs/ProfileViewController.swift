@@ -20,7 +20,7 @@ class ProfileViewController: UIViewController, UITableViewDelegate, UITableViewD
     private let tableView: UITableView = {
         
         let tableView = UITableView()
-        tableView.register(UITableViewCell.self, forCellReuseIdentifier: "cell")
+        tableView.register(PostPreviewUITableViewCell.self, forCellReuseIdentifier: PostPreviewUITableViewCell.identifier)
         
         return tableView
     }()
@@ -41,6 +41,8 @@ class ProfileViewController: UIViewController, UITableViewDelegate, UITableViewD
         setupSignOutButton()
         setUpTable()
         title = "Profile"
+        fetchPosts()
+        
         
      
     }
@@ -48,6 +50,7 @@ class ProfileViewController: UIViewController, UITableViewDelegate, UITableViewD
     override func viewDidLayoutSubviews() {
         super.viewDidLayoutSubviews()
         tableView.frame = view.bounds
+        
     }
     
     private func setUpTable(){
@@ -176,6 +179,15 @@ class ProfileViewController: UIViewController, UITableViewDelegate, UITableViewD
     
     private func fetchPosts(){
         
+        
+        print("fetching post..")
+        DatabaseManager.shared.getPosts(for: currentEmail){[weak self]posts in
+            self?.posts = posts
+            print("Found \(posts.count) posts")
+            DispatchQueue.main.async {
+                self?.tableView.reloadData()
+            }
+        }
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -185,15 +197,24 @@ class ProfileViewController: UIViewController, UITableViewDelegate, UITableViewD
        
         let post = posts[indexPath.row]
         
-        let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
+        guard let cell = tableView.dequeueReusableCell(withIdentifier:PostPreviewUITableViewCell.identifier, for: indexPath) as?
+                PostPreviewUITableViewCell else{
+            fatalError()
+            
+        }
         
-        cell.textLabel?.text = "Workout goes here"
+        cell.configure(with: .init(title: post.title,imageUrl: post.headerImageUrl))
         return cell
     }
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return 100
+    }
     
+    //viewing the work out 
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: true)
-        let vc = PostViewController()
+//        let vc = PostViewController()
+        let vc = ViewPostViewController(post: posts[indexPath.row])
         vc.title = posts[indexPath.row].title
         navigationController?.pushViewController(vc, animated: true)
     }
