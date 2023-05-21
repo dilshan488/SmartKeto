@@ -4,7 +4,6 @@
 //
 //  Created by Pubudu Dilshan on 2023-05-14.
 //
-
 import UIKit
 
 class CalculateViewController: UIViewController {
@@ -20,6 +19,7 @@ class CalculateViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        view.backgroundColor = .systemBackground
         heightSlidersetup()
         weightSliderChangedsetup()
         heightLabelsetup()
@@ -55,8 +55,8 @@ class CalculateViewController: UIViewController {
       //  heightLabel = UILabel(frame:CGRect(x: 10, y: 100, width: 300, height: 20))
         heightLabel.center = CGPointMake(190, 61)
         heightLabel.textAlignment = NSTextAlignment.center
-        heightLabel.font = UIFont(name: heightLabel.font.fontName, size:10)
-        heightLabel.textColor = UIColor.blue
+        heightLabel.font = UIFont(name: heightLabel.font.fontName, size:20)
+        heightLabel.textColor = UIColor.green
         self.view.addSubview(heightLabel)
         
     }
@@ -68,8 +68,8 @@ class CalculateViewController: UIViewController {
       //  heightLabel = UILabel(frame:CGRect(x: 10, y: 100, width: 300, height: 20))
         weightLabel.center = CGPointMake(250, 61)
         weightLabel.textAlignment = NSTextAlignment.center
-        weightLabel.font = UIFont(name: weightLabel.font.fontName, size:10)
-        weightLabel.textColor = UIColor.blue
+        weightLabel.font = UIFont(name: weightLabel.font.fontName, size:20)
+        weightLabel.textColor = UIColor.green
       
         self.view.addSubview(weightLabel)
         
@@ -149,4 +149,3 @@ class CalculateViewController: UIViewController {
 //            }
 //        }
     }
-

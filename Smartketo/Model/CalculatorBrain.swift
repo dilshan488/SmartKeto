@@ -25,6 +25,7 @@ struct CalculatorBrain
             if bmiVal < 18.5
             {
                 bmiValue = BMI(value: bmiVal, advice: "Underweight",color: UIColor.init(_colorLiteralRed: 0.0, green: 0.0, blue: 0.65, alpha: 1.0))
+              
             }
             else if bmiVal <= 24.9
             {

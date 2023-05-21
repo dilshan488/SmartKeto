@@ -43,7 +43,7 @@ class ViewPostViewController: UITabBarController,UITableViewDataSource,UITableVi
         tableView.frame = view.bounds
     }
     
-    // table
+    // table for viewing the content AKA Tableview
     func numberOfSections(in tableView: UITableView) -> Int {
         return 1
     }
@@ -86,35 +86,34 @@ class ViewPostViewController: UITabBarController,UITableViewDataSource,UITableVi
             fatalError()
         }
     }
+    
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+            
+            let index = indexPath.row
+            
+            switch index {
+                
+            case 0:
+                return UITableView.automaticDimension
+                
+                
+            case 1:
+                
+                return 150
+                
+            case 2:
+                return UITableView.automaticDimension
+                
+            default:
+                return UITableView.automaticDimension
+                
+            }
+
+            
     }
 
-
-
-
-
-    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        
-        let index = indexPath.row
-        
-        switch index {
-            
-        case 0:
-            return UITableView.automaticDimension
-            
-            
-        case 1:
-            
-            return 150
-            
-        case 2:
-            return UITableView.automaticDimension
-            
-        default:
-            return UITableView.automaticDimension
-            
-        }
-
-        
+    
+    
 }
 
 

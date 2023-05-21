@@ -10,6 +10,8 @@ import Foundation
 struct User {
     
     let name: String
+//    let height:String
+//    let weight:String
     let email: String
     let profilePictureRef: String?
     
